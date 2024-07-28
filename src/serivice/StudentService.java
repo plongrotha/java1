@@ -49,7 +49,6 @@ public class StudentService {
 			preparestatement.setInt(3, student.getGrade());
 			preparestatement.executeUpdate();
 			System.out.println("Insert Successfully");
-			System.out.println("Insert Successfully");
 		}
 		catch (SQLException e) {
 			e.printStackTrace();
