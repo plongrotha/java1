@@ -43,6 +43,13 @@ public class JDBCDemo {
 		}
 		return null;
 	}
+
+
 	
+	private void save(String name, String gender, int grade){
+		connection = getConnection();
+		Student student = new Student(name,gender,grade);
+		studentservice.saveStudent(student, connection);
+	}
 
 }
