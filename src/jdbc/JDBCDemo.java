@@ -38,14 +38,11 @@ public class JDBCDemo {
 			return connection;
 
 		} catch (Exception e) {
-			System.out.println("Driver not found");
+			System.out.println("connection is fails");
 			e.printStackTrace();
 		}
 		return null;
 	}
-
-
-	
 	private void save(String name, String gender, int grade){
 		connection = getConnection();
 		Student student = new Student(name,gender,grade);
