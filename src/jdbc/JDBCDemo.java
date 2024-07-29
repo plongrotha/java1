@@ -48,8 +48,4 @@ public class JDBCDemo {
 		Student student = new Student(name,gender,grade);
 		studentservice.saveStudent(student, connection);
 	}
-
-
-	
-
 }
